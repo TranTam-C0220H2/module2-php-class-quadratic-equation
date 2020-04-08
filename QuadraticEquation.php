@@ -31,16 +31,16 @@ class QuadraticEquation
 
     public function getDiscriminant()
     {
-        return $this->getCoefficient2() * $this->getCoefficient2() - 4 * $this->getCoefficient1() * $this->getCoefficient1();
+        return $this->getCoefficient2() * $this->getCoefficient2() - 4 * $this->getCoefficient1() * $this->getCoefficient3();
     }
 
     public function getRoot1()
     {
-        return (-$this->getCoefficient2() + Math . pow($this->getDiscriminant(), 0.5) / (2 * $this->getCoefficient1()));
+        return (-$this->getCoefficient2() + sqrt($this->getDiscriminant())) / (2 * $this->getCoefficient1());
     }
 
     public function getRoot2()
     {
-        return (-$this->getCoefficient2() - Math . pow($this->getDiscriminant(), 0.5) / (2 * $this->getCoefficient1()));
+        return (-$this->getCoefficient2() - sqrt($this->getDiscriminant())) / (2 * $this->getCoefficient1());
     }
 }

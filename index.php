@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<p>Giai phuong trinh: ax<sup>2</sup> + bx + c = 0</p>
+<p>Giai phuong trinh bac 2: ax<sup>2</sup> + bx + c = 0</p>
 <form method="post">
     Enter a, b, c :
     <input type="number" name="coefficient1">
